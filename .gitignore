@@ -1,0 +1,26 @@
+# Ambientes Virtuais (NUNCA devem subir para o GitHub)
+.venv/
+venv/
+ENV/
+env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+
+# Variáveis de Ambiente e Segredos
+.env
+.env.local
+.env.*.local
+
+# Configurações do VS Code / IDEs
+.vscode/
+.idea/
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db

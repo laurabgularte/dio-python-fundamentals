@@ -1,0 +1,62 @@
+[project]
+name = "dio-python-fundamentals"
+version = "0.1.0"
+description = "Repositório de estudos e consolidação de aprendizado no curso Python Fundamentals da DIO."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Laura Gularte", email = "laurabgularte@gmail.com" }
+]
+keywords = ["python", "fundamentals", "dio", "clean-code", "pep8"]
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# ==============================================================================
+# Configuração do Ruff (Linter & Formatter de Altíssima Performance)
+# ==============================================================================
+[tool.ruff]
+# Define a versão alvo da sintaxe Python
+target-version = "py311"
+
+# Comprimento máximo de linha (padrão 88 do Black / PEP 8 estendido)
+line-length = 88
+
+# Exclui arquivos temporários e virtuais da análise
+exclude = [
+    ".git",
+    ".github",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.lint]
+# Regras ativadas:
+# E / W  -> Erros e Avisos de sintaxe/estilo da PEP 8 (pycodestyle)
+# F      -> Erros do Pyflakes (importações não usadas, variáveis indefinidas)
+# I      -> Organização automática de imports (isort)
+# UP     -> Sugestões de sintaxe Python moderna (pyupgrade)
+# B      -> Detecção de armadilhas comuns e bugs (flake8-bugbear)
+select = ["E", "W", "F", "I", "UP", "B"]
+
+# Regras ignoradas explicitamente (se necessário no futuro)
+ignore = []
+
+# Permite autofix para regras seguras
+fixable = ["ALL"]
+
+[tool.ruff.lint.isort]
+# Garante que os imports fiquem organizados em blocos padronizados
+combine-as-imports = true
+
+[tool.ruff.format]
+# Configurações do formatador do Ruff (compatível com Black)
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
