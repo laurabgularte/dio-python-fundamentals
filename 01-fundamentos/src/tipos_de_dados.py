@@ -28,7 +28,8 @@ usuario = {"nome": "Laura", "nivel": "Junior/Pleno"}
 print(f"Valor: {usuario} | Tipo: {type(usuario)}")
 
 # 5. Coleção / Conjunto (set, frozenset)
-conjunto = {1, 2, 3, 3, 2}  # set (Remove duplicados automaticamente)
+# Passando uma lista com elementos duplicados para a função set()
+conjunto = set([1, 2, 3, 3, 2])  # Remove duplicados automaticamente
 conjunto_imutavel = frozenset([1, 2, 3])
 print(f"Valor: {conjunto} | Tipo: {type(conjunto)}")
 print(f"Valor: {conjunto_imutavel} | Tipo: {type(conjunto_imutavel)}")
