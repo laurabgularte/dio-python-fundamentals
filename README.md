@@ -16,9 +16,6 @@ O objetivo deste repositório não é apenas guardar scripts de exercícios, mas
 .
 ├── 01-fundamentos/          # Sintaxe, tipos de dados, operadores, I/O e estruturas condicionais
 ├── 02-estruturas-de-dados/  # Listas, tuplas, conjuntos (sets) e dicionários
-├── 03-funcoes/              # Escopo, parâmetros posicionais/nomeados, args/kwargs e lambdas
-├── 04-orientacao-a-objetos/ # Classes, herança, polimorfismo, encapsulamento e métodos especiais
-├── 05-manipulacao-arquivos/ # Leitura/escrita de arquivos (TXT, CSV, JSON) e tratamento de exceções
 ├── desafios-codigo/         # Resolução de desafios curtos (Katas) da plataforma
-└── desafios-projeto/        # Projetos práticos e aplicações completas
+
 ```
