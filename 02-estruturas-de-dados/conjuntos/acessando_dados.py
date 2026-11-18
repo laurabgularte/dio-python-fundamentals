@@ -1,4 +1,4 @@
-numeros = {1, 2, 3, 2}
+numeros = {1, 2, 3}
 
 numeros = list(numeros)
 
